@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: monospace; */
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  gap: 1em;
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.container .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 380px;
+  background-position: center;
+  background-size: cover;
+  filter: saturate(0%);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 138px;
+  font-weight: 900;
+  transition: filter, color 0.3s linear;
+}
+
+.container .image:hover {
+  filter: saturate(100%);
+  color: rgba(240, 236, 17, 0.5);
+  cursor: none;
+}
+
+.container .image_one {
+  background-image: url("image/image01.jpg");
+}
+
+.container .image_two {
+  background-image: url("image/image02.jpg");
+}
+.container .image_three {
+  background-image: url("image/image03.jpg");
+}
+
+.container .image_four {
+  background-image: url("image/image04.jpg");
+}
+
+.container .image_five {
+  background-image: url("image/image05.jpg");
+}
+
+.container .image_six {
+  background-image: url("image/image06.jpg");
+}
+
+.container .image_seven {
+  background-image: url("image/image07.jpg");
+}
+
+.container .cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f06b;
+  border-radius: 50%;
+  transition: 300ms linear;
+}
+
+.container:hover .cursor {
+  transform: scale(2.5);
+  background-color: #f0f0f06b;
+  box-shadow: 0 0 20px #ffd829e6;
+}
